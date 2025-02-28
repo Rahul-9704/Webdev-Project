@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/empower-fitness-logo.png" alt="Empower Fitness Logo">
+            <h1>FitLife Center</h1>
+        </div>
+        <nav class="button-nav">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="about.html" class="nav-button">About Us</a>
+            <a href="health-programs.html" class="nav-button">Programs</a>
+            <a href="classes.html" class="nav-button">Classes</a>
+            <a href="trainers.html" class="nav-button">Trainers</a>
+            <a href="membership.html" class="nav-button">Membership</a>
+            <a href="registration.html" class="nav-button">Register</a>
+        </nav>
+    </header>
+    <main>
+        <section class="registration-form">
+            <h2>Register Now</h2>
+            <p>Join our fitness centre today and start your journey towards a healthier lifestyle!</p>
+            <form action="#" method="post">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                <label for="membership">Membership Package:</label>
+                <select id="membership" name="membership">
+                    <option value="basic">Basic ($30/month)</option>
+                    <option value="premium">Premium ($50/month)</option>
+                    <option value="gold">Gold ($75/month)</option>
+                    <option value="student">Student ($20/month)</option>
+                    <option value="family">Family ($100/month)</option>
+                </select>
+
+                <label for="additionalServices">Additional Services (optional):</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="personalTraining" name="additionalServices" value="personalTraining">
+                    <label for="personalTraining">Personal Training</label>
+
+                    <input type="checkbox" id="nutritionalConsultation" name="additionalServices" value="nutritionalConsultation">
+                    <label for="nutritionalConsultation">Nutritional Consultation</label>
+
+                    <input type="checkbox" id="massageTherapy" name="additionalServices" value="massageTherapy">
+                    <label for="massageTherapy">Massage Therapy</label>
+                </div>
+
+                <label for="termsAndConditions">
+                    <input type="checkbox" id="termsAndConditions" name="termsAndConditions" required>
+                    I agree to the <a href="#">Terms and Conditions</a>
+                </label>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section class="why-join">
+            <h2>Why Join Our Fitness Centre?</h2>
+            <ul>
+                <li>State-of-the-art equipment</li>
+                <li>Experienced and certified trainers</li>
+                <li>Wide variety of fitness classes</li>
+                <li>Supportive and motivating community</li>
+                <li>Flexible membership options</li>
+                <li>Convenient location and hours</li>
+                <li>Personalized fitness plans</li>
+                <li>Nutritional guidance</li>
+                <li>Clean and well-maintained facilities</li>
+                <li>Results-oriented approach</li>
+            </ul>
+        </section>
+
+        <section class="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"I've been a member of this fitness centre for over a year and I've never felt better! The trainers are amazing and the classes are always challenging and fun." - Sarah J.</p>
+            </div>
+            <div class="testimonial">
+                <p>"This is the best fitness centre I've ever been to. The staff is friendly and helpful, and the facilities are top-notch." - Michael B.</p>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <ul>
+                <li>
+                    <h3>What are your hours of operation?</h3>
+                    <p>We are open Monday through Friday from 6:00 AM to 10:00 PM, and Saturday and Sunday from 8:00 AM to 8:00 PM.</p>
+                </li>
+                <li>
+                    <h3>What types of classes do you offer?</h3>
+                    <p>We offer a wide variety of classes, including yoga, Pilates, spinning, Zumba, HIIT, and more.  See our <a href="classes.html">Classes and Events</a> page for the full schedule.</p>
+                </li>
+                <li>
+                    <h3>Do you offer personal training?</h3>
+                    <p>Yes, we offer personal training sessions with our certified trainers.  Visit our <a href="trainers.html">Trainer Profiles</a> page to learn more.</p>
+                </li>
+                <li>
+                    <h3>What is your cancellation policy?</h3>
+                    <p>You can cancel your membership at any time with 30 days' written notice.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions, please don't hesitate to contact us:</p>
+            <p>Phone: (555) 555-5555</p>
+            <p>Email: <a href="mailto:registration@fitnesscentre.com">registration@fitnesscentre.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Fitness Centre. All rights reserved.</p>
+    </footer>
+</body>
+</html>

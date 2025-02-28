@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Application Form</title>
+    <link rel="stylesheet" href="application.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Membership Application Form</h1>
+    </header>
+    <main>
+        <form id="membership-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" required pattern="^\+601[0-9]{8,9}$" placeholder="+601-">
+
+            <label for="gender">Gender:</label>
+            <select id="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="membership-package">Membership Packages:</label>
+            <select id="membership-package" required>
+                <option value="">Select Your Preferred Package</option>
+                <option value="basic">Basic - $30/month</option>
+                <option value="premium">Premium - $50/month</option>
+                <option value="elite">Elite - $80/month</option>
+            </select>
+
+            <label for="medical-conditions">Do you have any allergies, chronic illness, or medical conditions?</label>
+            <textarea id="medical-conditions" placeholder="If yes, please describe..."></textarea>
+
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-check-circle"></i> Submit
+            </button>
+            <button type="button" class="cancel-btn" onclick="cancelForm()">
+              <i class="fas fa-times-circle"></i> Cancel
+            </button>
+        </form>
+
+        <!-- Popup Container (Hidden by Default) -->
+        <div id="popup-container" class="popup-container">
+            <div class="popup-content">
+                <span class="close-popup" onclick="closePopup()">×</span>
+                <h2>Congratulations!</h2>
+                <p><strong>Name:</strong> <span id="result-name"></span></p>
+                <p><strong>Email:</strong> <span id="result-email"></span></p>
+                <p><strong>Contact Number:</strong> <span id="result-contact"></span></p>
+                <p><strong>Gender:</strong> <span id="result-gender"></span></p>
+                <p><strong>Membership Package:</strong> <span id="result-package"></span></p>
+                <p><strong>Medical Conditions:</strong> <span id="result-conditions"></span></p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>© 2023 Fitness Centre. All rights reserved.</p>
+    </footer>
+
+    <script src="application.js"></script>
+</body>
+</html>

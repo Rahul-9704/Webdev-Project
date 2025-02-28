@@ -1,0 +1,209 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #6984a1; /* Primary blue color */
+    color: #fff;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button-nav {
+    display: flex;
+}
+
+.nav-button {
+    background-color: #0056b3; /* Darker blue */
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #003f80; /* Even darker blue on hover */
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px; /* Adjust size as needed */
+    margin-right: 1rem;
+}
+
+.logo h1 {
+  font-size: 1.75rem;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the main content */
+}
+
+h1, h2, h3 {
+    color: #2c3e50; /* Consistent heading color */
+    margin-bottom: 0.75rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Lighter border */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db; /* Primary color for table headers */
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #2c3e50;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem; /* Add some space above the footer */
+}
+
+.trainer {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Form Styles */
+.registration-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"],
+.registration-form select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for consistent width */
+}
+
+.registration-form button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration-form button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.registration-form .checkbox-group {
+    margin-bottom: 1rem;
+}
+
+.registration-form .checkbox-group label {
+    font-weight: normal;
+    margin-left: 0.5rem;
+}
+
+/* Testimonial Styles */
+.testimonial {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #3498db;
+    font-style: italic;
+}
+
+/* Why Join Section */
+.why-join ul {
+    list-style: disc;
+    padding-left: 2rem;
+}
+
+/* Image Gallery Styles */
+.event-gallery {
+    display: flex;
+    overflow: hidden; /* Hide images that are not visible */
+    width: 100%;   /* set the width to 100%
+    margin-bottom: 1.5rem;
+}
+
+.event-gallery img {
+    min-width: 100%; /* Ensure each image fills the container */
+    height: auto;
+    transition: opacity 0.5s ease;
+}
+
+/* Scroll to top button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+  z-index: 100; /* Ensure it's on top of other elements */
+}
+
+.scroll-to-top:hover {
+  background-color: #2980b9;
+}
+
+/* Show the button when the user scrolls down */
+body:not(:target) .scroll-to-top {
+  display: block;
+}
